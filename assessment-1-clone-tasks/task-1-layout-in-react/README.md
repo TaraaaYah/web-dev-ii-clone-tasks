@@ -7,7 +7,7 @@ Assessment 1.
 ## Running the project
 
 ```
-cd task-1
+cd assessment-1-clone-tasks/task-1-layout-in-react
 npm install
 npm run dev
 ```

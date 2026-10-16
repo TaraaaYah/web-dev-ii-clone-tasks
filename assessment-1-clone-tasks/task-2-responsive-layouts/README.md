@@ -7,7 +7,7 @@ Web Dev II (CCO5104-20), Assessment 1.
 ## Running the project
 
 ```
-cd task-2
+cd assessment-1-clone-tasks/task-2-responsive-layouts
 npm install
 npm run dev
 ```
