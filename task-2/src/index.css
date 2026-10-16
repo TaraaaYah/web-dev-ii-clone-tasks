@@ -1,0 +1,22 @@
+/* Global styles for the whole site */
+
+/* Make padding and borders count inside an element's width */
+* {
+  box-sizing: border-box;
+}
+
+/* Page background (watch.it brand purple) and body font (spec point 4.1) */
+body {
+  margin: 0;
+  background-color: #231651;
+  font-family: 'Lato', sans-serif;
+  color: #070410;
+}
+
+/* Headings and buttons use Teko (spec point 4.1) */
+h1,
+h2,
+button {
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
+}
