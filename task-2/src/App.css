@@ -132,3 +132,52 @@ button:hover {
     padding: 32px;
   }
 }
+
+/* Generative AI acknowledgement: the desktop media query below was written
+   with help from Claude (Anthropic). Prompt: "Write the desktop media query
+   for watch.it so the first card is full width and the last three cards
+   have the poster on the left, using 48px spacing." */
+
+/* ---------- Desktop: 1024px and wider ---------- */
+@media (min-width: 1024px) {
+  .site-nav {
+    gap: 48px;
+  }
+
+  .movies {
+    gap: 48px;
+    padding: 48px;
+  }
+
+  /* First card: full width, wide poster on top, text and button side by side */
+  .movie-card:first-child {
+    grid-column: span 2;
+  }
+
+  .movie-card:first-child img {
+    aspect-ratio: 3 / 1;
+  }
+
+  .movie-card:first-child .movie-info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .movie-card:first-child .movie-info button {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: auto;
+  }
+
+  /* Last three cards: full width, poster on the left, text on the right */
+  .movie-card:nth-child(n + 4) {
+    grid-column: span 2;
+    flex-direction: row;
+  }
+
+  .movie-card:nth-child(n + 4) img {
+    width: 50%;
+    aspect-ratio: 1;
+  }
+}
