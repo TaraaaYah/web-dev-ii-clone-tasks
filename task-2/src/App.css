@@ -1,1 +1,113 @@
-/* Styles for the watch.it page. */
+/* Styles for the watch.it page.
+   Written mobile-first: these base styles are for phones, and the media
+   queries at the bottom change the layout for tablet and desktop. */
+
+/* Generative AI acknowledgement: the base (mobile) styles below were written
+   with help from Claude (Anthropic). Prompt: "Write mobile-first styles for
+   the watch.it header and movie cards using the brand colours and the
+   mobile spacing from the spec." */
+
+/* ---------- Header ---------- */
+
+/* Header: logo on the left, search button on the right (small spacing) */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  background-color: #070410;
+}
+
+/* watch.it logo is 2em on mobile (spec point 4.2) */
+.logo {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1;
+  color: #ffffff;
+}
+
+/* Category links are hidden on mobile (mobile wireframe) */
+.site-nav {
+  display: none;
+}
+
+.site-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #eef36a;
+}
+
+/* ---------- Buttons ---------- */
+
+/* Buttons: Teko, 2em, small spacing and border radius (spec points 2.4 and 4.4) */
+button {
+  font-size: 2em;
+  line-height: 1.2;
+  padding: 8px 16px 4px;
+  border: none;
+  border-radius: 16px;
+  background-color: #4dccbd;
+  color: #070410;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eef36a;
+}
+
+/* ---------- Movie cards ---------- */
+
+/* Primary content container: one column on mobile, max 900px wide (spec point 3) */
+.movies {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Each card: poster on top, information underneath, font size 1.5em (spec point 4.3) */
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 8px 8px 0 #070410;
+  font-size: 1.5em;
+}
+
+.movie-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Card information uses small spacing (spec point 2.3) */
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  flex: 1;
+}
+
+.movie-info h2 {
+  margin: 0;
+  font-size: 1.3em;
+  line-height: 1;
+}
+
+/* The description grows so the buttons line up at the bottom of each card */
+.movie-info p {
+  margin: 0;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.movie-info button {
+  width: 100%;
+}
