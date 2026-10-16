@@ -111,3 +111,24 @@ button:hover {
 .movie-info button {
   width: 100%;
 }
+
+/* ---------- Tablet: 720px and wider ---------- */
+@media (min-width: 720px) {
+  /* Show the category links, with large spacing between them */
+  .site-nav {
+    display: flex;
+    gap: 32px;
+  }
+
+  /* Logo is 3em on tablet and desktop (spec point 4.2) */
+  .logo {
+    font-size: 3em;
+  }
+
+  /* Two columns of cards with large spacing */
+  .movies {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 32px;
+  }
+}
