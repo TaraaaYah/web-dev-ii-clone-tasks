@@ -1,2 +1,33 @@
 /* Styles for the Erased Tapes page.
    Each section's styles will be added here as we build it. */
+
+/* Generative AI acknowledgement: the header styles below were written with
+   help from Claude (Anthropic). Prompt: "Style the header with the logo
+   centred and the nav links spread evenly, using 50px spacing." */
+
+/* Header: logo centred, with the links spread out underneath */
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+/* Logo is 200px wide (spec point 2) */
+.logo {
+  width: 200px;
+}
+
+/* Navigation links spread evenly across the content width */
+.site-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.site-nav a {
+  color: #14181d;
+  text-decoration: none;
+}
