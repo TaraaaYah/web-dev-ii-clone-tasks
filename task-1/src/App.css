@@ -105,3 +105,52 @@
 .albums .featured {
   grid-column: span 2;
   grid-row: span 2;
+}
+/* Generative AI acknowledgement: the author section styles below were
+   written with help from Claude (Anthropic). Prompt: "Style the author
+   section with the bio, a round 200px photo and 50px social icons." */
+
+/* Author section: bio, photo and icons side by side */
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+
+.author-bio {
+  max-width: 400px;
+  text-align: center;
+}
+
+.author h2 {
+  font-size: 3em;
+  margin: 0 0 20px;
+}
+
+.author-bio p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Author photo is 200px wide and round (spec point 2) */
+.author-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Social icons stacked with 10px between them (spec point 4) */
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Social icons are 50px wide (spec point 3) */
+.social-icons img {
+  display: block;
+  width: 50px;
+}

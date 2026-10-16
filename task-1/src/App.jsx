@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Intro from './components/Intro'
 import Article from './components/Article'
 import Albums from './components/Albums'
+import Author from './components/Author'
 
 // Main page component for Clone Task 1: Erased Tapes blog post
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Intro />
         <Article />
         <Albums />
+        <Author />
       </main>
     </div>
   )
