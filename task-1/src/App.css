@@ -38,8 +38,8 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px;
+  border: 1px solid #c4c4c4;
 }
-     border: 1px solid #c4c4c4;
 
 /* Title is much larger than other headings */
 .intro h1 {
@@ -176,4 +176,40 @@
 .comment p {
   line-height: 1.6;
   margin: 5px 0 0;
+}
+
+/* Footer: dark bar across the full width of the page (spec point 1) */
+.site-footer {
+  background-color: #14181d;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Footer links spread evenly across the page */
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer p {
+  margin: 50px 0;
+}
+
+/* Footer icons sit in a row, 10px apart */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Social icons are 50px wide (spec point 3) */
+.footer-icons img {
+  display: block;
+  width: 50px;
 }

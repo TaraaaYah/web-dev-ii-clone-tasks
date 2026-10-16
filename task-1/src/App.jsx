@@ -5,6 +5,7 @@ import Article from './components/Article'
 import Albums from './components/Albums'
 import Author from './components/Author'
 import Comments from './components/Comments'
+import Footer from './components/Footer'
 
 // Main page component for Clone Task 1: Erased Tapes blog post
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Author />
         <Comments />
       </main>
+      <Footer />
     </div>
   )
 }
