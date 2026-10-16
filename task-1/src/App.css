@@ -31,3 +31,32 @@
   color: #14181d;
   text-decoration: none;
 }
+
+/* White content box in the middle of the page (spec point 1) */
+.content {
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+     border: 1px solid #c4c4c4;
+
+/* Title is much larger than other headings */
+.intro h1 {
+  font-size: 7em;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Subtitle and other headings are three times the normal size (spec point 5.2) */
+.intro h2 {
+  font-size: 3em;
+  margin: 0 0 30px;
+}
+
+/* The first paragraph uses a larger font (spec point 5.3) */
+.intro-text {
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+
