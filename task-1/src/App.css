@@ -60,3 +60,28 @@
   line-height: 1.6;
 }
 
+
+/* Generative AI acknowledgement: the article styles below were written with
+   help from Claude (Anthropic). Prompt: "Lay out the article text in three
+   columns with headings, using 50px spacing." */
+
+/* Article text flows across three columns, like a newspaper */
+.article {
+  columns: 3;
+  column-gap: 50px;
+  margin-top: 50px;
+}
+
+/* Section headings are three times the normal size (spec point 5.2) */
+.article h2 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0 0 20px;
+  break-after: avoid; /* keep a heading with the paragraph under it */
+}
+
+/* Readable paragraph spacing (spec point 5.4) */
+.article p {
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
